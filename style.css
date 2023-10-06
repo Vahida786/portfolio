@@ -1,0 +1,10 @@
+.card-image{
+    object-fit: fill;
+}
+
+/* > = means fst child  */
+
+
+.carousel-item > img{
+    height: 400px;
+}
