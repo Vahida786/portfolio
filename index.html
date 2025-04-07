@@ -1,324 +1,193 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-
 <body>
-  <!-- nav bar section start -->
-  <nav class="navbar navbar-expand-lg bg-body-white">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="./images/pexels-abraham-george-creations-14412949.jpg" alt="Bootstrap" width="50" height="50" class="rounded-circle">
+  <!-- navbar header -->
+  <div class="nav-header">
+    <div class="nav-brand">
+      <img src="https://s3-us-west-2.amazonaws.com/parallax-theme/assets/bradlogo2.png">
+    </div>
+    <i class="fa fa-bars fa-3x"></i>
+    <div class="header-links">
+      <ul>
+        <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
+        <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li>
+        <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- end navbar header -->
 
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active text-primary fw-bolder" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-primary fw-bolder" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-primary fw-bolder" href="#">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-primary fw-bolder" href="#">Works</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-primary fw-bolder" href="#">Contact</a>
-          </li>
-
-
-
+  <!-- sidebar slider -->
+  <div class="nav-screen">
+    <i class="fa fa-times fa-3x"></i>
+    <div class="nav-container">
+      <div class="nav-links">
+        <ul id='myMenu'>
+          <li data-menuanchor="secondPage"><a href="#about">ABOUT</a></li>
+          <li data-menuanchor="thirdPage"><a href="#portfolio">PORTFOLIO</a></li>
+          <li data-menuanchor="fourthPage"><a href="#contact">CONTACT</a></li>
         </ul>
-
       </div>
     </div>
-  </nav>
+  </div>
+  <!-- end navbar slider -->
 
-  <!-- nav bar section end -->
+  <!-- begin fullpage -->
 
-  <!-- title section start -->
-  <div class="container-fluid">
-    <div class="container-fluid">
-      <div class="row bg-primary text-white" style="min-height: 400px;">
-        <div class="col-lg-8 md-6 col-12 border border-primary d-flex align-items-center justify-content-center">
+  <div id="fullpage">
 
-          <div>
-            hello,my name
-            <h1 class="fw-bolder">Jhon doe</h1>
-            <h3>fullstack developer</h3>
-            <div class="mt-lg-5 mt-md-2 mt-0">
-              <button class="btn bg-white text-dark rounded-pill btn-lg">download cv</button>
-              <button class="btn btn-outline-light rounded-pill btn-lg">playvideo</button>
+    <!-- begin section -->
+
+    <div class="section aboutme" data-anchor="aboutme">
+      <div class="opaque-bg animated fadeInDown">
+        <h1 style="color:white">BRAD<span style="color:#FF6363">/</span>ENGELHARDT</h1>
+        <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
+      </div>
+      <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
+    </div>
+    <!-- end section -->
+
+    <!-- begin section -->
+
+    <div class="section" data-anchor="skills">
+      <div class="content">
+        <h1 class="wow fadeInDown" data-wow-delay="0.2s">ABOUT ME</h1>
+        <p class="wow fadeInDown" data-wow-delay="0.2s">Hi, I'm Brad Engelhardt! I'm a Silicon Valley based Web Designer & Front-end Developer focused on creating clean, responsive web designs!</p>
+
+        <div class=" wow fadeInUp container-skillbar" data-wow-delay="0.2s">
+          <div class="skillbar clearfix " data-percent="90%">
+            <div class="skillbar-title" style="background: #DD1E2F;"><span>HTML5</span></div>
+            <div class="skillbar-bar" style="background: #DD1E2F;"></div>
+            <div class="skill-bar-percent">90%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="80%">
+            <div class="skillbar-title" style="background: #EBB035;"><span>CSS3</span></div>
+            <div class="skillbar-bar" style="background: #EBB035;"></div>
+            <div class="skill-bar-percent">80%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="75%">
+            <div class="skillbar-title" style="background: #218559;"><span>Photoshop</span></div>
+            <div class="skillbar-bar" style="background: #218559;"></div>
+            <div class="skill-bar-percent">75%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="45%">
+            <div class="skillbar-title" style="background: #6840D4;"><span>Rails</span></div>
+            <div class="skillbar-bar" style="background: #6840D4;"></div>
+            <div class="skill-bar-percent">45%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="30%">
+            <div class="skillbar-title" style="background: #06A2CB;"><span>jQuery</span></div>
+            <div class="skillbar-bar" style="background: #06A2CB;"></div>
+            <div class="skill-bar-percent">30%</div>
+          </div> <!-- End Skill Bar -->
+
+          <div class="skillbar clearfix " data-percent="20%">
+            <div class="skillbar-title" style="background: #AB4DD2;"><span>PHP</span></div>
+            <div class="skillbar-bar" style="background: #AB4DD2;"></div>
+            <div class="skill-bar-percent">20%</div>
+          </div> <!-- End Skill Bar -->
+        </div>
+      </div>
+    </div>
+    <!-- end section -->
+
+    <!-- begin section -->
+
+    <div class="section" data-anchor="projects">
+      <div class="content-slide">
+        <div class="slide">
+          <h1 class="wow fadeInDown" data-wow-delay="0.2s">XFAIRE</h1>
+          <p class="wow fadeInDown" data-wow-delay="0.2s">Digital streaming service</p>
+          <img class="wow fadeInUp" data-wow-delay="0.2s" data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/xfaire.jpg">
+        </div>
+        <div class="slide">
+          <h1>MACHETE ENERGY</h1>
+          <p>Energy drink website</p>
+          <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/machete.jpg">
+        </div>
+        <div class="slide">
+          <h1>PORTFOLIO</h1>
+          <p>Mockup of a personal portfolio I was working on for a friend.</p>
+          <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/cascioportfolio.jpg">
+        </div>
+        <div class="slide">
+          <h1>THATONEBLOG</h1>
+          <p>Minimalist blogging platform.</p>
+          <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/blog.jpg">
+        </div>
+        <div class="slide">
+          <h1>PIXBORED</h1>
+          <p>Website for sharing images and gifs.</p>
+          <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/pixbored.jpg">
+        </div>
+        <div class="slide">
+          <h1>PERSONAL WEBSITE</h1>
+          <p>Responsive vertical/horizontal header website theme.</p>
+          <img data-src="https://s3-us-west-2.amazonaws.com/bradengelhardt/assets/personalsite.jpg">
+        </div>
+      </div>
+    </div>
+    <!-- end section -->
+
+    <!-- begin section -->
+
+    <div class="section" data-anchor="contact">
+      <div class="content wow fadeInDown" data-wow-delay="0.2s">
+        <h1>CONTACT ME</h1>
+        <p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!</p>
+        <br>
+        <div class="contact-form">
+
+          <div id="form-messages"></div>
+          <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
+            <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s">
+              <input type="text" class="form-control" id="name" name="name" placeholder="NAME" data-error="Field can't be blank!" required>
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
             </div>
-          </div>
-        </div>
 
-        <div class="col-lg-4 md-6 col-12 border border-info">
-          <img src="./images/pexels-abraham-george-creations-14412949.jpg" alt="" style="height:380px; width: 400px;"
-            class="border rounded-circle">
-        </div>
-      </div>
-    </div>
-
-    <!-- title section end -->
-
-    <!-- about me section start -->
-    <div class="container">
-      <h1 class="text-center text-primary fw-bolder mt-lg-5 mt-md-3 mt-2">ABOUT ME</h1>
-      <div class="card mb-3" style="max-width:100%;height: 500px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="./images/pexels-abraham-george-creations-14412949.jpg" class="" alt="..." height="500px" width="80%;">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h2 class="card-title">fullstack Developer</h2>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nisi quae sequi nulla fugit maiores
-                perferendis voluptas distinctio vero ducimus, dolor, vitae voluptatum illum exercitationem placeat sunt
-                suscipit quis natus!
-                This is a wider card with supporting text below as a natural lead-in to additional content. This content
-                is a little bit longer.</p>
-              <div class="row">
-                <div class="col-6 mt-3 ">
-                  <span class="fw-bolder">Name:</span> <span>Jhon</span>
-                </div>
-                <div class="col-6 mt-3">
-                  <span class="fw-bolder">Birthday:</span> <span>18-05-1995</span>
-                </div>
-                <div class="col-6 mt-3">
-                  <span class="fw-bolder">Degree:</span> <span>MCA</span>
-                </div>
-                <div class="col-6 mt-3">
-                  <span class="fw-bolder">Experience:</span> <span>2 years</span>
-                </div>
-                <div class="col-6 mt-3">
-                  <span class="fw-bolder">Phone:</span> <span>9754325677</span>
-                </div>
-                <div class="col-6 mt-3">
-                  <span class="fw-bolder">Email:</span> <span>Jhondoe@gmail.com</span>
-                </div>
-                <div class="col-6 mt-3">
-                  <span class="fw-bolder">Address:</span> <span>address line</span>
-                </div>
-                <div class="col-6 mt-3">
-                  <span class="fw-bolder">Freelance</span> <span>i year</span>
-                </div>
-
-                <div class="col-6 mt-lg-4 mt-md-3 mt-2">
-                  <button class="btn btn-outline-primary rounded-pill btn-lg">Hire me</button>
-                  <button class="btn btn-outline-primary rounded-pill btn-lg">Learn More</button>
-                </div>
-              </div>
+            <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.8s">
+              <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL" data-error="Field can't be blank!" required>
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
             </div>
-          </div>
+
+            <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
+              <textarea data-minlength="10" class="form-control" id="message" name="message" placeholder="MESSAGE" data-error="Minimum of 10 characters" required></textarea>
+              <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+              <div class="help-block with-errors"></div>
+            </div>
+
+            <div class="hidden">
+              <input type="text" class="form-control" id="human" name="human" placeholder="">
+            </div>
+            <div class="wow fadeInUp" data-wow-delay="1s">
+              <button type="submit" id="submit" name="submit" class="btn btn-lg">SEND MESSAGE</button>
+            </div>
+          </form>
+          <br>
         </div>
       </div>
     </div>
+    <!-- end section -->
 
-    <!-- about me section end -->
+    <!-- begin section -->
 
-    <!-- skill section start
-  <div class="container">
-    <h1 class="text-center text-primary fw-bolder mt-lg-5 mt-md-3 mt-2">Skills</h1>
-     -->
-
-
-
-    <!-- skill section -->
-
-
-    <div class="container">
-      <h1 class="text-center text-primary fw-bolder mt-lg-5 mt-md-3 mt-2">SKILLS</h1>
-      <div class="row">
-
-
-        <div class="col-6">
-          html
-          <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0"
-            aria-valuemax="100">
-            <div class="progress-bar bg-success" style="width: 25%"></div>
-          </div>
-        </div>
-        <div class="col-6">
-          css
-          <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0"
-            aria-valuemax="100">
-            <div class="progress-bar bg-info" style="width: 50%"></div>
-          </div>
-        </div>
-
-        <div class="col-6">
-          java
-          <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0"
-            aria-valuemax="100">
-            <div class="progress-bar bg-warning" style="width: 75%"></div>
-          </div>
-        </div>
-
-        <div class="col-6">
-          flutter
-          <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0"
-            aria-valuemax="100">
-            <div class="progress-bar bg-danger" style="width: 100%"></div>
-          </div>
-        </div>
-        <div class="col-6">
-          javascript
-          <div class="progress" role="progressbar" aria-label="success example" aria-valuenow="75" aria-valuemin="0"
-            aria-valuemax="100">
-            <div class="progress-bar bg-success" style="width: 75%"></div>
-          </div>
-        </div>
-
-        <div class="col-6">
-          python
-          <div class="progress" role="progressbar" aria-label="Info examplee" aria-valuenow="100" aria-valuemin="0"
-            aria-valuemax="100">
-            <div class="progress-bar Info examplee" style="width: 100%"></div>
-          </div>
+    <div class="section fp-auto-height">
+      <div class="footer">
+        <p>CONNECT WITH ME</p>
+        <div class="social-links">
+          <span><a href="https://www.linkedin.com/in/bradleyengelhardt" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></span>
+          <span><a target="_blank" href="https://twitter.com/bradengelhardt" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></span>
+          <span><a href="https://github.com/SquishyAndroid" target="_blank"><i class="fa fa-github fa-2x"></i></a></span>
+          <span><a href="https://codepen.io/SquishyAndroid/pens/public/"><i class="fa fa-codepen fa-2x"></i></a></span>
         </div>
       </div>
     </div>
-
-
-
-
-
+    <!-- end section -->
 
   </div>
-
-
-  </div>
-  </div>
-  </div>
-  </div>
-
-  </div>
-
-  <!-- SKILL END -->
-<!-- MY PROJECTS -->
-<div class="container">
-  <h1 class="text-center text-primary fw-bolder mt-lg-5 mt-3 mt-2">MY PROJECTS</h1>
-
-  
-  
-    <div class="row">
-      <div class="col-lg-4 col-md-4 col-12 mt-lg-0 mt-md-0 mt-2">
-        <img src="./images/pexels-abraham-george-creations-14412949.jpg" alt="" width="100%" height="300px">
-      </div>
-
-
-      <div class="col-lg-4 col-md-4 col-12 mt-lg-0 mt-md-0 mt-2">
-        <img src="./images/david-holifield-kPxsqUGneXQ-unsplash.jpg" alt="" width="100%" height="300px">
-      </div>
-
-
-      
-      <div class="col-lg-4 col-md-4 col-12 mt-lg-0 mt-md-0 mt-2">
-        <img src="./images/pexels-ganta-srinivas-4511301.jpg" alt="" width="100%" height="300px">
-      </div>
-
-      <div class="col-lg-4 col-md-4 col-12 mt-lg-0 mt-md-0 mt-2">
-        <img src="./images/pexels-pixabay-147411.jpg" alt="" width="100%" height="300px">
-      </div>
-
-      <div class="col-lg-4 col-md-4 col-12 mt-lg-0 mt-md-0 mt-2">
-        <img src="./images/pexels-roberto-lee-cortes-18253778.jpg" alt="" width="100%" height="300px">
-      </div>
-
-      <div class="col-lg-4 col-md-4 col-12 mt-lg-0 mt-md-0 mt-2">
-        <img src="./images/pexels-abraham-george-creations-14412949.jpg" alt="" width="100%" height="300px">
-      </div>
-    </div>
-
-
-    
-     
-     
-</div>
-
-<!-- CONTACT ME END -->
-
-
-  <!-- my works -->
-  <div class="container">
-      <h1 class="text-center text-primary fw-bolder mt-lg-5 mt-md-3 mt-2">PROJECTS</h1>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-intervel="50000">
-          <img src="./images/pexels-ganta-srinivas-4511301.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Social networking</h5>
-            <p>connect pepoles together</p>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-intervel="50000">
-          <img src="./images/pexels-pixabay-147411.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Sea</h5>
-            <p>A sea is a large body of salty water</p>
-          </div>
-        </div>
-        <div class="carousel-item" data-bs-intervel="50000">
-          <img src="./images/pexels-roberto-lee-cortes-18253778.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Road</h5>
-            <p>an open way for vehicles, persons, and animals</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-
-  </div>
-
-  <!-- footer strt -->
-
-  <div class="container-fluid bg-primary mt-3 p-5">
-    <div>
-      <a href=""><i class="fa-brands fa-facebook fa-2x" style="color: white;">hllo</i>/a>
-    </div>
-
-  </div>
-
-
-
+  <!-- end fullpage -->
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-</html>
